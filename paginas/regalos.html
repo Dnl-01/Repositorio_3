@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regalos de Navidad</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Navidad</h1>
+  </header>
+  <nav>
+      <ul>
+        <li><a href="../index.html">Bienvenida</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="regalos.html">Regalos</a></li>
+        <li><a href="comida.html">Comida</a></li>
+      </ul>
+    </nav>
+  <main class="contenedor-regalos">
+    <h2>Lista de Regalos</h2>
+    <p class="instruccion">Escribe un regalo navideño y presiona agregar para armar tu lista.</p>
+
+    <div class="formulario-regalos">
+      <input type="text" id="input-regalo" placeholder="Ej. Audífonos, abrigo, libro...">
+      <button id="btn-agregar" onclick="agregarRegalo()">Agregar</button>
+      <button id="btn-limpiar" class="btn-secundario" onclick="limpiarRegalos()">Limpiar todo</button>
+    </div>
+
+    <ul id="lista-regalos" class="lista-regalos"></ul>
+  </main>
+
+  <footer>
+    <h3>Diseñado por Daniel Callisaya</h3>
+  </footer>
+
+  <script src="../js/regalos.js"></script>
+</body>
+</html>

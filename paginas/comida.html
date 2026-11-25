@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comida de Navidad</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Navidad</h1>
+  </header>
+  <nav>
+      <ul>
+        <li><a href="../index.html">Bienvenida</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="regalos.html">Regalos</a></li>
+        <li><a href="comida.html">Comida</a></li>
+      </ul>
+    </nav>
+  <main class="contenedor-comida">
+    <h2>Comida Navideña — Carrito</h2>
+    <p class="instruccion">Agrega platos o bebidas a tu carrito para calcular el total.</p>
+
+    <div class="grid-comida">
+      <div class="tarjeta-comida">
+        <img src="picana.jpg" alt="Picana navideña">
+        <h3>Picana Navideña</h3>
+        <p class="precio">Bs 35</p>
+        <button class="btn-agregar" onclick="agregarAlCarrito('Picana Navideña', 35)">Agregar</button>
+      </div>
+
+      <div class="tarjeta-comida">
+        <img src="paneton.jpg" alt="Panetón">
+        <h3>Panetón</h3>
+        <p class="precio">Bs 25</p>
+        <button class="btn-agregar" onclick="agregarAlCarrito('Panetón', 25)">Agregar</button>
+      </div>
+
+      <div class="tarjeta-comida">
+        <img src="chocolate.jpg" alt="Chocolate caliente">
+        <h3>Chocolate Caliente</h3>
+        <p class="precio">Bs 12</p>
+        <button class="btn-agregar" onclick="agregarAlCarrito('Chocolate Caliente', 12)">Agregar</button>
+      </div>
+
+      <div class="tarjeta-comida">
+        <img src="relleno.jpg" alt="Relleno navideño">
+        <h3>Relleno Navideño</h3>
+        <p class="precio">Bs 30</p>
+        <button class="btn-agregar" onclick="agregarAlCarrito('Relleno Navideño', 30)">Agregar</button>
+      </div>
+    </div>
+
+    <div class="caja-carrito">
+      <h3>Tu Carrito</h3>
+      <ul id="lista-carrito" class="lista-carrito"></ul>
+      <p class="total-carrito">Total: <span id="total-precio">Bs 0</span></p>
+      <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+  </main>
+
+  <footer>
+    <h3>Diseñado por Daniel Callisaya</h3>
+  </footer>
+
+  <script src="../js/comida.js"></script>
+</body>
+</html>
